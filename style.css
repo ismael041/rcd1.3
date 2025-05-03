@@ -1,0 +1,183 @@
+body{
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+p,h1,h2 {
+    margin-left: 7px;
+}
+
+/* en tete */
+.tete {
+    display: flex;
+    justify-content: space-between;
+}
+.tete-vertical {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+.tete-vertical li {
+    margin: 60px 30px;
+}
+.tete-vertical li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.tete-vertical li a:hover {
+    font-weight: 400;
+    color: brown;
+}
+
+/*
+ corps
+*/
+.bouton {
+    background-color: red;
+    width: 100px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    margin: 10px;
+    border: 1px solid;
+}
+.bouton:hover {
+    background-color: brown;
+}
+.bouton a {
+    text-decoration: none;
+    color: antiquewhite;
+}
+.boutton a:hover {
+    font-weight: 400;
+}
+
+
+/* Commentaires*/
+.commentaire {
+    display: flex;
+    justify-content: center;
+}
+.comment {
+    width: 400px;
+    height: 230px;
+    background-color: firebrick;
+    border: 3px solid;
+    margin: 50px;
+    margin-top: 100px;
+    border-radius: 30px;
+    box-shadow:  0 4px 8px rgba(255, 0, 0, 0.6);
+    transition: box-shadow 0.3s ease;
+}
+.Pseudo {
+    text-align: center;
+    font-size: 30px;
+    text-decoration: underline;
+}
+.avis {
+    margin: 0;
+}
+.title {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    text-decoration: dashed;
+    font-size: 20px;
+}
+.pieds {
+    display: flex;
+    border-top: 2px solid whitesmoke;
+    justify-content: space-between;
+}
+.foot1 {
+    margin-top: 100px;
+    margin-right: 50px;
+}
+.foot2 a {
+    text-decoration: none;
+    color: antiquewhite;
+}
+.foot2 a:hover {
+    font-weight: 600;
+    color: brown;
+}
+.foot2 {
+    margin-left: 50px;
+}
+.titre  {
+    text-align: center;
+    text-decoration: underline;
+}
+
+table {
+    border: 5px white solid;
+    border-collapse: collapse;
+    height: 400px;
+    width: auto;
+    margin: 60px;
+    
+}
+th, td {
+    border: 5px solid #ccc;
+    text-align: center;
+}
+th {
+    background-color: red;
+}
+.table {
+    display: flex;
+    justify-content: center;
+}
+.h1 {
+    color: red;
+    text-align: center;
+    font-size: xx-large;
+}
+.faq {
+    margin: 20px;
+    margin-bottom: 200px;
+
+}
+.faq h2 {
+    margin: 20px;
+}
+.faq h1 {
+    margin-bottom: 150px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .tete{
+        justify-content: center;
+        flex-direction: column;
+    }
+    .logo {
+        text-align: center;
+        height: 60px;
+    }
+    .tete-vertical {
+        justify-content: center;
+    }
+    .commentaire {
+        flex-direction: column;
+    }
+    .comment {
+        width: 75%;
+    }
+    .pieds {
+        flex-direction: column;
+    
+    }
+    .foot1 {
+        margin-top: 30px;
+    }
+    .Pseudo {
+        margin-bottom: 10px;
+        margin-top: 15px;
+    }
+}
